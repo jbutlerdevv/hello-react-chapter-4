@@ -1,0 +1,15 @@
+Using useState:
+------------------------------------------------------------------
+------------------------------------------------------------------
+// Example refer to code
+---useState is a React Hook and needs to be included in the React import
+
+---A hook is a function that allows you to add functionality to a component
+
+---React has a number of built-in hooks to handle common use cases like this.
+
+---So now within the context of our h1, we can display the status, the initial status, which is open. Now, useState returns a pair here. So status is our state value that we've given a name. Remember, the array destructuring is letting us give this value a name.
+
+---Now, the second value that is being returned from useState is a function to update the state. So we can just call this setStatus.
+
+---So now I'm going to add a button here on line 10. Every time I click that button, I want to change the status. We're going to display Closed inside of that button. And then in the onClick, we're going to call that setStatus function and we're going to pass it a value that we want to change it to. So every time I click Closed, that's going to change the status for our app. 

@@ -1,0 +1,43 @@
+Array Destructuring:
+------------------------------------------------------------------
+------------------------------------------------------------------
+// Normal Array
+
+const snacks = [
+    "popcorn",
+    "pretzels",
+    "pineapple"
+];
+
+console.log(snacks[0]); --- console logs "popcorn"
+console.log(snacks[1]); --- console logs "pretzels"
+console.log(snacks[2]); --- console logs "pineapple"
+------------------------------------------------------------------
+------------------------------------------------------------------
+// Array Destructuring
+
+// Example 1------------------------------------
+const [first, second, third] = [
+    "popcorn",
+    "pretzels",
+    "pineapple"
+];
+
+console.log(first); --- console logs "popcorn"
+console.log(second); --- console logs "pretzels"
+console.log(third); --- console logs "pineapple"
+
+---This allows us to create a name for the index of an item in an array and call on that name instead of having to reference the index itself in the array. It replaces the need to do that
+// ----------------------------------------------
+
+// Example 2------------------------------------
+const [, , fruit] = [
+    "popcorn",
+    "pretzels",
+    "pineapple"
+];
+
+console.log(fruit); --- console logs "pineapple"
+
+---If we only wanted to call on the third item in the array we could just set the first 2 items as placeholders using commas and only name the third item producing the console.log above as expected
+------------------------------------------------------------------
